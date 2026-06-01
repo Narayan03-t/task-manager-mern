@@ -139,7 +139,7 @@ const DashboardPage = () => {
                 </h1>
                 <p className="max-w-2xl text-sm leading-7 text-slate-500 sm:text-base">
                   Track every task in one secure workspace, move priorities forward, and keep
-                  your day structured without losing context.
+                  your day structured without losing context (INT332).
                 </p>
               </div>
             </div>
