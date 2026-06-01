@@ -48,6 +48,6 @@ volumes:
   mongo_data:
 
 networks:
-  task-manager-network:
+  task-manager-network:     
     driver: bridge
 
