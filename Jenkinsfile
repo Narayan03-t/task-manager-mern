@@ -67,9 +67,15 @@ pipeline {
 
     stage('Deploy Application') {
     steps {
-        sh 'docker compose down'
-        sh 'docker compose up -d --build'
+        sh '''
+            docker rm -f task-manager-frontend || true
+            docker rm -f task-manager-backend || true
+            docker rm -f task-manager-mongo || true
+
+            docker compose up -d --build
+        '''
     }
+}
 }
 
   }
